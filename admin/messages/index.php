@@ -6,17 +6,28 @@ require_admin_login();
 // Marquer comme lu
 if (isset($_GET['read'])) {
     $id = sanitize_int($_GET['read']);
-    db()->prepare('UPDATE contact_messages SET is_read=1 WHERE id=?')->execute([$id]);
+    try {
+        $pdo = db();
+        if ($pdo) $pdo->prepare('UPDATE contact_messages SET is_read=1 WHERE id=?')->execute([$id]);
+    } catch (Exception $e) {}
 }
 
 $page    = max(1, sanitize_int($_GET['page'] ?? 1));
 $limit   = 20;
 $offset  = ($page - 1) * $limit;
-$unread  = db()->query('SELECT COUNT(*) FROM contact_messages WHERE is_read=0')->fetchColumn();
-$total   = db()->query('SELECT COUNT(*) FROM contact_messages')->fetchColumn();
-$messages = db()->prepare('SELECT * FROM contact_messages ORDER BY is_read ASC, created_at DESC LIMIT '.$limit.' OFFSET '.$offset);
-$messages->execute();
-$messages = $messages->fetchAll();
+$unread  = 0;
+$total   = 0;
+$messages = [];
+try {
+    $pdo = db();
+    if ($pdo) {
+        $unread   = (int)$pdo->query('SELECT COUNT(*) FROM contact_messages WHERE is_read=0')->fetchColumn();
+        $total    = (int)$pdo->query('SELECT COUNT(*) FROM contact_messages')->fetchColumn();
+        $stmt     = $pdo->prepare('SELECT * FROM contact_messages ORDER BY is_read ASC, created_at DESC LIMIT '.$limit.' OFFSET '.$offset);
+        $stmt->execute();
+        $messages = $stmt->fetchAll();
+    }
+} catch (Exception $e) {}
 ?>
 <!DOCTYPE html>
 <html lang="fr">

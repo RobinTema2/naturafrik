@@ -3,16 +3,16 @@ require_once dirname(dirname(__DIR__)) . '/config/config.php';
 require_once dirname(dirname(__DIR__)) . '/includes/functions.php';
 require_admin_login();
 
-// Suppression
-if (isset($_GET['delete']) && csrf_verify()) {
-    $id = sanitize_int($_GET['delete']);
+// Suppression via POST
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_id']) && csrf_verify()) {
+    $id = sanitize_int($_POST['delete_id']);
     try {
         $p = db()->prepare('SELECT name FROM products WHERE id=?');
         $p->execute([$id]);
         $name = $p->fetchColumn();
         db()->prepare('DELETE FROM products WHERE id=?')->execute([$id]);
         admin_log('product_deleted', "Produit supprimé: $name");
-        set_flash('success', "Produit supprimé.");
+        set_flash('success', "Produit \"$name\" supprimé.");
     } catch (Exception $e) { set_flash('error', 'Erreur lors de la suppression.'); }
     header('Location: index.php'); exit;
 }
@@ -132,7 +132,11 @@ $pages = ceil($total / $limit);
               <td>
                 <div class="table-actions">
                   <a href="edit.php?id=<?= $p['id'] ?>" class="action-btn action-edit" title="Modifier"><i class="fas fa-edit"></i></a>
-                  <a href="index.php?delete=<?= $p['id'] ?>&<?= CSRF_TOKEN_NAME ?>=<?= csrf_token() ?>" class="action-btn action-delete" title="Supprimer" onclick="return confirm('Supprimer ce produit définitivement ?')"><i class="fas fa-trash-alt"></i></a>
+                  <form method="POST" style="display:inline;" onsubmit="return confirm('Supprimer ce produit définitivement ?')">
+                    <?= csrf_field() ?>
+                    <input type="hidden" name="delete_id" value="<?= $p['id'] ?>">
+                    <button type="submit" class="action-btn action-delete" title="Supprimer"><i class="fas fa-trash-alt"></i></button>
+                  </form>
                 </div>
               </td>
             </tr>
