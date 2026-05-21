@@ -35,7 +35,9 @@ try {
 <!-- Sidebar -->
 <aside class="admin-sidebar" id="adminSidebar">
   <div class="sidebar-logo">
-    <div class="sidebar-logo-icon">🌿</div>
+    <div class="sidebar-logo-icon">
+      <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20C19 20 22 3 22 3c-1 2-8 2-8 2C14 8 17 8 17 8z"/></svg>
+    </div>
     <div>
       <div class="sidebar-brand">NATURAFRIK</div>
       <div class="sidebar-admin">Administration</div>
@@ -113,7 +115,7 @@ try {
     </button>
     <div class="topbar-title">
       <h1>Dashboard</h1>
-      <span>Bienvenue, <?= e($_SESSION['admin_name'] ?? 'Admin') ?> 👋</span>
+      <span>Bienvenue, <?= e($_SESSION['admin_name'] ?? 'Admin') ?></span>
     </div>
     <div class="topbar-actions">
       <a href="<?= SITE_URL ?>/index.php" target="_blank" class="topbar-btn" title="Voir le site">
