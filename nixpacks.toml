@@ -1,8 +1,5 @@
-# ── Railway / Nixpacks — Configuration PHP ──────────
-# Déploiement automatique depuis GitHub
-
 [phases.setup]
-nixPkgs = ["php82", "php82Extensions.pdo", "php82Extensions.pdo_mysql", "php82Extensions.mbstring", "php82Extensions.gd", "php82Extensions.fileinfo"]
+nixPkgs = ["php82", "php82Extensions.pdo_mysql", "php82Extensions.mbstring", "php82Extensions.gd", "php82Extensions.fileinfo"]
 
 [start]
 cmd = "php -S 0.0.0.0:$PORT"
