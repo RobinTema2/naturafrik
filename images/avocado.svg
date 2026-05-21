@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1505"/>
+      <stop offset="100%" style="stop-color:#142008"/>
+    </linearGradient>
+    <radialGradient id="avo" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" style="stop-color:#4A7020"/>
+      <stop offset="100%" style="stop-color:#1E3A08"/>
+    </radialGradient>
+    <radialGradient id="avoFlesh" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#C8D840"/>
+      <stop offset="60%" style="stop-color:#90B030"/>
+      <stop offset="100%" style="stop-color:#608020"/>
+    </radialGradient>
+    <radialGradient id="pit" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" style="stop-color:#6B3A10"/>
+      <stop offset="100%" style="stop-color:#3A1C08"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <!-- Whole avocado left -->
+  <ellipse cx="160" cy="200" rx="80" ry="110" fill="url(#avo)"/>
+  <ellipse cx="155" cy="190" rx="55" ry="75" fill="#3A6018" opacity="0.4"/>
+  <!-- Stem -->
+  <rect x="156" y="88" width="8" height="20" rx="4" fill="#4A3010"/>
+  <!-- Half avocado right -->
+  <ellipse cx="400" cy="200" rx="80" ry="110" fill="url(#avo)"/>
+  <!-- Cut surface -->
+  <ellipse cx="400" cy="200" rx="65" ry="95" fill="url(#avoFlesh)"/>
+  <ellipse cx="400" cy="200" rx="30" ry="42" fill="url(#pit)"/>
+  <ellipse cx="393" cy="193" rx="15" ry="20" fill="#5A3015" opacity="0.4"/>
+  <!-- Leaves -->
+  <path d="M155 88 Q130 60 110 50 Q125 70 148 85 Z" fill="#2D6018"/>
+  <path d="M163 88 Q185 55 200 48 Q190 68 167 84 Z" fill="#2D6018"/>
+  <!-- Label -->
+  <rect x="0" y="330" width="600" height="70" fill="#0A1505" opacity="0.85"/>
+  <text x="300" y="365" font-family="serif" font-size="16" text-anchor="middle" fill="#90C040" letter-spacing="4">AVOCAT FRAIS</text>
+  <text x="300" y="385" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#608030" letter-spacing="2">CAMEROUN · RÉCOLTE FRAÎCHE</text>
+</svg>

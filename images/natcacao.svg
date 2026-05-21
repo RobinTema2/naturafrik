@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 600">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A0A00;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2C1510;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0C040;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#C8860A;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#8B5E0A;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="pkgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2D0F08;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1A0806;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="500" height="600" fill="url(#bgGrad)"/>
+  <!-- Cacao beans scattered background -->
+  <ellipse cx="60" cy="80" rx="22" ry="14" fill="#3D1A0A" transform="rotate(-30 60 80)"/>
+  <ellipse cx="440" cy="120" rx="18" ry="11" fill="#3D1A0A" transform="rotate(20 440 120)"/>
+  <ellipse cx="80" cy="480" rx="20" ry="13" fill="#3D1A0A" transform="rotate(45 80 480)"/>
+  <ellipse cx="420" cy="520" rx="25" ry="15" fill="#3D1A0A" transform="rotate(-15 420 520)"/>
+  <ellipse cx="30" cy="300" rx="16" ry="10" fill="#3D1A0A" transform="rotate(60 30 300)"/>
+  <ellipse cx="470" cy="350" rx="19" ry="12" fill="#3D1A0A" transform="rotate(-40 470 350)"/>
+  <!-- Gold decorative line top -->
+  <rect x="60" y="30" width="380" height="2" fill="url(#goldGrad)" opacity="0.6"/>
+  <rect x="60" y="570" width="380" height="2" fill="url(#goldGrad)" opacity="0.6"/>
+  <!-- Package body -->
+  <rect x="80" y="80" width="340" height="440" rx="8" fill="url(#pkgGrad)"/>
+  <rect x="85" y="85" width="330" height="430" rx="6" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.8"/>
+  <!-- Top brand area -->
+  <rect x="80" y="80" width="340" height="100" rx="8" fill="#C8860A" opacity="0.15"/>
+  <!-- NATURCAM Sarl text -->
+  <text x="250" y="130" font-family="serif" font-size="11" text-anchor="middle" fill="#F0C040" letter-spacing="4">NATURCAM SARL</text>
+  <text x="250" y="150" font-family="serif" font-size="9" text-anchor="middle" fill="#C8A060" letter-spacing="2">GROUPE NATURE CAMEROUN</text>
+  <!-- Decorative circle -->
+  <circle cx="250" cy="260" r="90" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="250" cy="260" r="75" fill="none" stroke="url(#goldGrad)" stroke-width="0.5" opacity="0.3"/>
+  <!-- Cacao pod illustration -->
+  <ellipse cx="250" cy="260" rx="55" ry="70" fill="#6B2D0A" stroke="#8B4510" stroke-width="2"/>
+  <ellipse cx="250" cy="260" rx="48" ry="63" fill="none" stroke="#C8860A" stroke-width="0.8" opacity="0.6"/>
+  <!-- Cacao pod ridges -->
+  <path d="M215 215 Q250 200 285 215" fill="none" stroke="#C8860A" stroke-width="1" opacity="0.7"/>
+  <path d="M205 240 Q250 225 295 240" fill="none" stroke="#C8860A" stroke-width="1" opacity="0.7"/>
+  <path d="M200 265 Q250 250 300 265" fill="none" stroke="#C8860A" stroke-width="1" opacity="0.7"/>
+  <path d="M203 290 Q250 275 297 290" fill="none" stroke="#C8860A" stroke-width="1" opacity="0.7"/>
+  <path d="M210 310 Q250 298 290 310" fill="none" stroke="#C8860A" stroke-width="1" opacity="0.7"/>
+  <!-- Leaf -->
+  <path d="M250 190 Q270 165 290 155 Q285 175 260 195 Z" fill="#2D7D3A" stroke="#1A5C2A" stroke-width="1"/>
+  <!-- Main product name -->
+  <text x="250" y="370" font-family="serif" font-size="42" font-weight="bold" text-anchor="middle" fill="url(#goldGrad)" letter-spacing="2">NATCACAO</text>
+  <rect x="100" y="380" width="300" height="1" fill="url(#goldGrad)" opacity="0.5"/>
+  <!-- Subtitle -->
+  <text x="250" y="400" font-family="sans-serif" font-size="11" text-anchor="middle" fill="#E8C880" letter-spacing="3">CACAO PUR DU CAMEROUN</text>
+  <!-- Weight badge -->
+  <rect x="190" y="420" width="120" height="34" rx="17" fill="url(#goldGrad)"/>
+  <text x="250" y="442" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1A0800">500 g</text>
+  <!-- Region info -->
+  <text x="250" y="490" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#A08060" letter-spacing="2">RÉGION OUEST · ALTITUDE 1000-1500M</text>
+  <text x="250" y="507" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#A08060" letter-spacing="1">TRINITARIO &amp; FORASTERO</text>
+</svg>

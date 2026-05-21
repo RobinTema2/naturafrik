@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050810"/>
+      <stop offset="100%" style="stop-color:#0A0F1C"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1530"/>
+      <stop offset="100%" style="stop-color:#1A2A50"/>
+    </linearGradient>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4C8B0"/>
+      <stop offset="100%" style="stop-color:#B0A488"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <!-- Sky gradient area -->
+  <rect width="600" height="260" fill="url(#sky)"/>
+  <!-- Stars -->
+  <circle cx="80" cy="50" r="1.5" fill="white" opacity="0.7"/>
+  <circle cx="200" cy="30" r="1" fill="white" opacity="0.6"/>
+  <circle cx="400" cy="70" r="1.5" fill="white" opacity="0.5"/>
+  <circle cx="520" cy="40" r="1" fill="white" opacity="0.7"/>
+  <circle cx="150" cy="80" r="1" fill="white" opacity="0.4"/>
+  <circle cx="480" cy="20" r="1.5" fill="white" opacity="0.6"/>
+  <circle cx="340" cy="45" r="1" fill="white" opacity="0.5"/>
+  <!-- Moon -->
+  <circle cx="520" cy="80" r="25" fill="#E8D88A" opacity="0.9"/>
+  <circle cx="532" cy="74" r="20" fill="url(#sky)" opacity="0.7"/>
+  <!-- Ground -->
+  <rect x="0" y="300" width="600" height="100" fill="#1A2A10"/>
+  <!-- Lawn -->
+  <ellipse cx="300" cy="305" rx="280" ry="20" fill="#1E3A12"/>
+  <!-- Main house walls -->
+  <rect x="120" y="200" width="360" height="150" fill="url(#wallGrad)"/>
+  <!-- Roof -->
+  <polygon points="90,205 300,80 510,205" fill="#6A3020"/>
+  <polygon points="90,205 300,80 510,205" fill="none" stroke="#8B4030" stroke-width="2"/>
+  <!-- Roof tiles lines -->
+  <line x1="300" y1="80" x2="300" y2="205" stroke="#5A2018" stroke-width="1" opacity="0.5"/>
+  <line x1="195" y1="142" x2="405" y2="142" stroke="#5A2018" stroke-width="1" opacity="0.4"/>
+  <line x1="155" y1="173" x2="445" y2="173" stroke="#5A2018" stroke-width="1" opacity="0.4"/>
+  <!-- Door -->
+  <rect x="260" y="280" width="80" height="70" rx="4" fill="#6B3A18"/>
+  <rect x="264" y="284" width="72" height="62" rx="3" fill="#5A3015"/>
+  <circle cx="333" cy="315" r="4" fill="#C8860A"/>
+  <!-- Windows -->
+  <rect x="145" y="225" width="70" height="55" rx="3" fill="#1A3A6A"/>
+  <rect x="148" y="228" width="64" height="49" rx="2" fill="#204A80"/>
+  <line x1="180" y1="228" x2="180" y2="277" stroke="#3A6AAA" stroke-width="1.5"/>
+  <line x1="148" y1="252" x2="212" y2="252" stroke="#3A6AAA" stroke-width="1.5"/>
+  <!-- Window light glow -->
+  <rect x="148" y="228" width="30" height="23" fill="#F8E080" opacity="0.2"/>
+  <rect x="385" y="225" width="70" height="55" rx="3" fill="#1A3A6A"/>
+  <rect x="388" y="228" width="64" height="49" rx="2" fill="#204A80"/>
+  <line x1="420" y1="228" x2="420" y2="277" stroke="#3A6AAA" stroke-width="1.5"/>
+  <line x1="388" y1="252" x2="452" y2="252" stroke="#3A6AAA" stroke-width="1.5"/>
+  <rect x="388" y="228" width="30" height="23" fill="#F8E080" opacity="0.2"/>
+  <!-- Chimney -->
+  <rect x="380" y="110" width="30" height="60" fill="#6A3020"/>
+  <rect x="377" y="108" width="36" height="8" rx="2" fill="#5A2818"/>
+  <!-- Smoke -->
+  <path d="M395 108 Q400 90 392 75 Q402 85 395 70" fill="none" stroke="#808080" stroke-width="2" opacity="0.4"/>
+  <!-- Trees -->
+  <rect x="60" y="270" width="12" height="50" fill="#4A2A10"/>
+  <ellipse cx="66" cy="250" rx="30" ry="38" fill="#1A5020"/>
+  <ellipse cx="66" cy="235" rx="22" ry="28" fill="#1E6028"/>
+  <rect x="520" y="275" width="12" height="45" fill="#4A2A10"/>
+  <ellipse cx="526" cy="255" rx="28" ry="35" fill="#1A5020"/>
+  <ellipse cx="526" cy="242" rx="20" ry="26" fill="#1E6028"/>
+  <!-- Path -->
+  <polygon points="285,350 315,350 340,400 260,400" fill="#C8C0A0" opacity="0.5"/>
+  <!-- Label -->
+  <rect x="0" y="330" width="600" height="70" fill="#050810" opacity="0.85"/>
+  <text x="300" y="362" font-family="serif" font-size="16" text-anchor="middle" fill="#C8A060" letter-spacing="4">IMMOBILIER</text>
+  <text x="300" y="383" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#607080" letter-spacing="2">MAISONS · TERRAINS · LOCATIONS</text>
+</svg>

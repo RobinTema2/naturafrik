@@ -1,0 +1,97 @@
+============================================================
+  NATURAFRIK — RECENSEMENT DES IMAGES DU PROJET
+  Date : 22 avril 2026
+============================================================
+
+DOSSIER : C:\xampp\htdocs\naturafrik\images\
+
+------------------------------------------------------------
+IMAGES A REMPLACER PAR VOS VRAIES PHOTOS
+------------------------------------------------------------
+
+1. natcacao.svg
+   Usage    : Produit phare NATCACAO — page d'accueil + page produits
+   Format   : PNG ou WebP avec fond transparent recommandé
+   Note     : Image la plus importante du site
+
+2. cacao-beans.svg
+   Usage    : Fèves de cacao — page Produits
+   Format   : JPG ou WebP
+
+3. coffee.svg
+   Usage    : Café — page Produits
+   Format   : JPG ou WebP
+
+4. avocado.svg
+   Usage    : Avocat — page Produits
+   Format   : JPG ou WebP
+
+5. house.svg
+   Usage    : Bien immobilier — page Immobilier
+   Format   : JPG ou WebP
+
+6. agriculture.svg
+   Usage    : Agriculture / champs — page Agriculture
+   Format   : JPG ou WebP
+
+7. poultry.svg
+   Usage    : Volaille / élevage — page Agriculture
+   Format   : JPG ou WebP
+
+8. gold-bar.svg
+   Usage    : Or — page Matières Premières
+   Format   : JPG ou WebP
+
+9. copper.svg
+   Usage    : Cuivre — page Matières Premières
+   Format   : JPG ou WebP
+
+10. placeholder.svg
+    Usage    : Image générique affichée si une autre image est manquante
+    Format   : JPG ou WebP
+
+------------------------------------------------------------
+IMAGE A CONSERVER (ne pas remplacer)
+------------------------------------------------------------
+
+11. favicon.svg
+    Usage    : Icône de l'onglet navigateur (logo NATURAFRIK)
+    Note     : SVG vectoriel — fonctionne bien, pas besoin de photo
+
+------------------------------------------------------------
+INSTRUCTIONS POUR REMPLACER UNE IMAGE
+------------------------------------------------------------
+
+OPTION A — Même extension (recommandé, aucune modification de code) :
+  → Supprimez l'ancien fichier SVG
+  → Copiez votre image dans le dossier images/
+  → Renommez-la exactement comme l'ancien fichier
+  → Exemple : votre photo de cacao → renommez-la "cacao-beans.svg"
+     (même si c'est un JPG, le navigateur acceptera)
+
+OPTION B — Extension différente (ex: .svg → .png) :
+  → Copiez votre image dans le dossier images/
+  → Renommez-la avec la bonne extension
+  → Exemple : natcacao.png
+  → Prévenez le développeur pour qu'il mette à jour
+     les références dans le code source
+
+------------------------------------------------------------
+FORMATS RECOMMANDES
+------------------------------------------------------------
+
+  JPG   : Photos, paysages, produits en situation
+  PNG   : Images avec fond transparent (sachet, logo, emballage)
+  WebP  : Meilleure option — plus léger que JPG/PNG, même qualité
+  SVG   : Uniquement pour les icônes et logos vectoriels
+
+------------------------------------------------------------
+TAILLE RECOMMANDEE DES IMAGES
+------------------------------------------------------------
+
+  Produits (natcacao, cacao, café, avocat) : 800 x 800 px minimum
+  Immobilier / Agriculture                  : 1200 x 800 px minimum
+  Matières premières                        : 800 x 600 px minimum
+  Placeholder / fallback                    : 600 x 400 px minimum
+
+============================================================

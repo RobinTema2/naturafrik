@@ -1,0 +1,32 @@
+# ── Environnement local ──────────────────────────────
+.env
+.env.local
+.env.production
+
+# ── Config avec mots de passe ────────────────────────
+config/config.local.php
+
+# ── Uploads utilisateurs ─────────────────────────────
+uploads/*
+!uploads/.gitkeep
+
+# ── Logs ─────────────────────────────────────────────
+*.log
+logs/
+error_log
+
+# ── OS / Éditeurs ────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.sublime-*
+
+# ── PHP cache ────────────────────────────────────────
+*.cache
+cache/
+tmp/
+
+# ── Node (si jamais) ─────────────────────────────────
+node_modules/

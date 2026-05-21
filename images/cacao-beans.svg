@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A0D05"/>
+      <stop offset="100%" style="stop-color:#2C1A08"/>
+    </linearGradient>
+    <radialGradient id="bean1" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#8B4513"/>
+      <stop offset="100%" style="stop-color:#4A1E08"/>
+    </radialGradient>
+    <radialGradient id="bean2" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#6B3410"/>
+      <stop offset="100%" style="stop-color:#3A1606"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg)"/>
+  <!-- Large cacao beans scattered -->
+  <ellipse cx="80" cy="200" rx="55" ry="35" fill="url(#bean1)" transform="rotate(-20 80 200)"/>
+  <line x1="80" y1="165" x2="80" y2="235" stroke="#6B3010" stroke-width="1.5" opacity="0.6"/>
+  <ellipse cx="180" cy="120" rx="60" ry="38" fill="url(#bean2)" transform="rotate(15 180 120)"/>
+  <line x1="148" y1="109" x2="212" y2="131" stroke="#5A2A0A" stroke-width="1.5" opacity="0.6"/>
+  <ellipse cx="300" cy="230" rx="65" ry="40" fill="url(#bean1)" transform="rotate(-5 300 230)"/>
+  <line x1="300" y1="190" x2="300" y2="270" stroke="#6B3010" stroke-width="1.5" opacity="0.6"/>
+  <ellipse cx="420" cy="150" rx="58" ry="36" fill="url(#bean2)" transform="rotate(25 420 150)"/>
+  <line x1="388" y1="140" x2="452" y2="160" stroke="#5A2A0A" stroke-width="1.5" opacity="0.6"/>
+  <ellipse cx="520" cy="260" rx="55" ry="34" fill="url(#bean1)" transform="rotate(-10 520 260)"/>
+  <line x1="520" y1="226" x2="520" y2="294" stroke="#6B3010" stroke-width="1.5" opacity="0.6"/>
+  <ellipse cx="150" cy="300" rx="50" ry="32" fill="url(#bean1)" transform="rotate(30 150 300)"/>
+  <ellipse cx="460" cy="320" rx="52" ry="33" fill="url(#bean2)" transform="rotate(-25 460 320)"/>
+  <ellipse cx="340" cy="80" rx="48" ry="30" fill="url(#bean1)" transform="rotate(10 340 80)"/>
+  <!-- Small beans -->
+  <ellipse cx="240" cy="340" rx="35" ry="22" fill="url(#bean2)" transform="rotate(-15 240 340)"/>
+  <ellipse cx="560" cy="120" rx="32" ry="20" fill="url(#bean1)" transform="rotate(20 560 120)"/>
+  <ellipse cx="40" cy="340" rx="38" ry="24" fill="url(#bean2)" transform="rotate(35 40 340)"/>
+  <!-- Gold shimmer overlay -->
+  <rect width="600" height="400" fill="none" stroke="#C8860A" stroke-width="0" opacity="0"/>
+  <!-- Brand overlay -->
+  <rect x="0" y="330" width="600" height="70" fill="#1A0D05" opacity="0.8"/>
+  <text x="300" y="365" font-family="serif" font-size="16" text-anchor="middle" fill="#C8860A" letter-spacing="4">FÈVES DE CACAO</text>
+  <text x="300" y="385" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#8B6030" letter-spacing="2">RÉGION OUEST · CAMEROUN</text>
+</svg>

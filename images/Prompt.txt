@@ -1,0 +1,27 @@
+Salut,
+
+Je souhaite concevoir un site professionnel à mettre en ligne pour la vente de produits. Ce site devra permettre de vendre :
+
+- Des produits en sachet tels que le café, le cacao, l'avocat, ainsi que d'autres produits qui seront ajoutés ultérieurement ;
+
+- Des biens immobiliers (maisons, terrains, locations, boutiques, etc.) ;
+
+- Une section agricole regroupant l'agriculture et l'élevage, dédiée à la vente de produits comme le poulet, le porc, chèvre, bœuf , le maïs, le manioc,patate douce,Banane plantain, macabo etc. ;
+
+- Une dernière partie pour la vente de matières premières (fer, or, caoutchouc, bronze, cuivre, etc.).
+
+Voici mes attentes :
+
+- Concevoir ce site de manière extrêmement esthétique et professionnelle, avec des animations soignées et professionnelles (par exemple, un effet de liquide glacé) ;
+
+- Assurer une sécurité maximale ;
+
+- Produire une interface administrateur distincte me permettant d'ajouter de nouveaux produits par la suite ;
+
+- Intégrer ces différentes fonctionnalités distinctes avec une page d'accueil joviale et professionnelle.
+
+Tu vas utiliser les informations envoyées par image pour la création du site(numéro de téléphone,numéro de compte bancaire logo du site etc…). Veuillez m'indiquer comment procéder de mon côté.
+
+Utilisez les langages de programmation nécessaires (HTML, PHP, CSS, etc.). Je vais utiliser Visual Studio Code pour assembler le tout. Veuillez également me guider pour la mise en ligne (nom de domaine et hébergement).
+
+Le nom du site sera : NATURAFRICA.

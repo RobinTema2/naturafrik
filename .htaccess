@@ -1,0 +1,90 @@
+# ============================================================
+# NATURAFRICA - Configuration Apache
+# Sécurité maximale
+# ============================================================
+
+Options -Indexes -ExecCGI
+ServerSignature Off
+
+# ── Réécriture d'URL ────────────────────────────────────────
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /naturafrik/
+
+    # HTTPS en production (décommenter)
+    # RewriteCond %{HTTPS} off
+    # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Bloquer l'accès aux fichiers sensibles
+    RewriteRule ^config/ - [F,L]
+    RewriteRule ^includes/ - [F,L]
+    RewriteRule ^database/ - [F,L]
+    RewriteRule ^\.env - [F,L]
+</IfModule>
+
+# ── Headers de sécurité ──────────────────────────────────────
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+
+    # CSP (Content Security Policy)
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' fonts.googleapis.com cdnjs.cloudflare.com; font-src 'self' fonts.gstatic.com cdnjs.cloudflare.com; img-src 'self' data: blob:; connect-src 'self'; frame-ancestors 'none';"
+
+    # Cache static assets
+    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|webp|svg|woff|woff2|ttf)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+
+    # No cache for PHP files
+    <FilesMatch "\.php$">
+        Header set Cache-Control "no-store, no-cache, must-revalidate"
+        Header set Pragma "no-cache"
+    </FilesMatch>
+
+    # Supprimer X-Powered-By
+    Header unset X-Powered-By
+    Header always unset X-Powered-By
+</IfModule>
+
+# ── Protection des fichiers sensibles ───────────────────────
+<Files ".htaccess">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "*.sql">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "*.log">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "config.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# ── Bloquer les bots malveillants ────────────────────────────
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP_USER_AGENT} (libwww|wget|python|nikto|curl|scan|java|winhttp|clshttp|loader) [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} (<|>|'|%0A|%0D|%27|%3C|%3E|%00) [NC]
+    RewriteRule .* - [F,L]
+</IfModule>
+
+# ── Compression GZIP ────────────────────────────────────────
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# ── Uploads directory ───────────────────────────────────────
+<IfModule mod_php.c>
+    php_flag upload_max_filesize 5M
+    php_flag post_max_size 10M
+    php_flag memory_limit 128M
+</IfModule>
