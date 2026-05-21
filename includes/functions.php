@@ -52,6 +52,7 @@ function sanitize_email(string $email): string|false {
 function check_rate_limit(string $ip, string $action, int $max = 5, int $window = 3600): bool {
     try {
         $pdo = db();
+        if ($pdo === null) return true;
         $stmt = $pdo->prepare('SELECT attempts, blocked_until FROM rate_limits WHERE ip_address = ? AND action = ?');
         $stmt->execute([$ip, $action]);
         $row = $stmt->fetch();
@@ -130,6 +131,7 @@ function slugify(string $text): string {
 
 function unique_slug(string $table, string $base): string {
     $pdo  = db();
+    if ($pdo === null) return slugify($base) . '-' . uniqid();
     $slug = slugify($base);
     $orig = $slug;
     $i    = 1;
@@ -270,9 +272,11 @@ function require_admin_login(): void {
 
 function admin_log(string $action, string $details = ''): void {
     try {
-        $stmt = db()->prepare('INSERT INTO admin_logs (user_id, action, details, ip_address) VALUES (?,?,?,?)');
+        $pdo = db();
+        if ($pdo === null) return;
+        $stmt = $pdo->prepare('INSERT INTO admin_logs (user_id, action, details, ip_address) VALUES (?,?,?,?)');
         $stmt->execute([$_SESSION['admin_id'] ?? null, $action, $details, get_ip()]);
-    } catch (Exception $e) {}
+    } catch (\Throwable $e) {}
 }
 
 // ============================================================
