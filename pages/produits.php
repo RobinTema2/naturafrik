@@ -91,7 +91,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
       <?php if (!empty($products)): foreach ($products as $i => $p): ?>
       <div class="product-card" data-category="<?= e($p['slug'] ?? 'cacao') ?>" data-reveal data-delay="<?= ($i % 4) + 1 ?>">
         <div class="product-card-img">
-          <img src="<?= $p['image'] ? '/naturafrik/uploads/' . e($p['image']) : '/naturafrik/images/Natcacao%20(2).png' ?>" alt="<?= e($p['name']) ?>">
+          <img src="<?= $p['image'] ? '/naturafrik/uploads/' . e($p['image']) : '/naturafrik/images/Natcacao%20(2).png' ?>" alt="<?= e($p['name']) ?>" loading="lazy">
         </div>
         <div class="product-card-body">
           <?php if ($p['is_new']): ?><span class="product-badge">Nouveau</span><?php elseif ($p['is_featured']): ?><span class="product-badge">⭐ Vedette</span><?php endif; ?>

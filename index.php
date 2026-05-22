@@ -111,7 +111,7 @@ require_once __DIR__ . '/includes/header.php';
 
       <!-- 1. Produits naturels (featured – tall) -->
       <div class="cat-card" data-reveal>
-        <img src="/naturafrik/images/Natcacao%20(2).png" alt="Produits naturels" class="cat-card-img">
+        <img src="/naturafrik/images/Natcacao%20(2).png" alt="Produits naturels" class="cat-card-img" loading="lazy">
         <div class="cat-card-body">
           <span class="cat-tag">Exclusif</span>
           <h3 class="cat-title">Produits naturels</h3>
@@ -125,7 +125,7 @@ require_once __DIR__ . '/includes/header.php';
 
       <!-- 2. Immobilier -->
       <div class="cat-card" data-reveal data-delay="1">
-        <img src="/naturafrik/images/maison%20luxueuse.jpeg" alt="Immobilier de prestige" class="cat-card-img">
+        <img src="/naturafrik/images/maison%20luxueuse.jpeg" alt="Immobilier de prestige" class="cat-card-img" loading="lazy">
         <div class="cat-card-body">
           <span class="cat-tag">Prestige</span>
           <h3 class="cat-title">Immobilier</h3>
@@ -139,7 +139,7 @@ require_once __DIR__ . '/includes/header.php';
 
       <!-- 3. Agriculture -->
       <div class="cat-card" data-reveal data-delay="2">
-        <img src="/naturafrik/images/Agriculture-image%20de%20page.jpg" alt="Agriculture & Élevage" class="cat-card-img">
+        <img src="/naturafrik/images/Agriculture-image%20de%20page.jpg" alt="Agriculture & Élevage" class="cat-card-img" loading="lazy">
         <div class="cat-card-body">
           <span class="cat-tag">Frais</span>
           <h3 class="cat-title">Agriculture</h3>
@@ -153,7 +153,7 @@ require_once __DIR__ . '/includes/header.php';
 
       <!-- 4. Matières premières -->
       <div class="cat-card" data-reveal data-delay="3">
-        <img src="/naturafrik/images/Or.jpg" alt="Matières premières" class="cat-card-img">
+        <img src="/naturafrik/images/Or.jpg" alt="Matières premières" class="cat-card-img" loading="lazy">
         <div class="cat-card-body">
           <span class="cat-tag">Premium</span>
           <h3 class="cat-title">Matières 1ères</h3>
@@ -343,7 +343,7 @@ require_once __DIR__ . '/includes/header.php';
   <div class="container">
     <div class="about-grid">
       <div class="about-img-wrap" data-reveal="left">
-        <img src="/naturafrik/images/Cacao%20seche.jpg" alt="Fèves de cacao NATURCAM" class="about-img-main">
+        <img src="/naturafrik/images/Cacao%20seche.jpg" alt="Fèves de cacao NATURCAM" class="about-img-main" loading="lazy">
         <div class="about-img-badge">
           <div class="about-img-badge-num">2023</div>
           <div class="about-img-badge-text">Fondée à Yaoundé</div>
@@ -404,7 +404,7 @@ require_once __DIR__ . '/includes/header.php';
     </div>
     <div class="bento-grid">
       <div class="bento-card bento-lg" data-reveal>
-        <img src="/naturafrik/images/Poule%20dans%20une%20ferme.jpg" alt="Volaille" class="bento-card-img">
+        <img src="/naturafrik/images/Poule%20dans%20une%20ferme.jpg" alt="Volaille" class="bento-card-img" loading="lazy">
         <div class="bento-card-overlay">
           <div class="bento-icon-fa"><i class="fas fa-dove"></i></div>
           <div class="bento-label">Volaille fermière</div>
@@ -412,7 +412,7 @@ require_once __DIR__ . '/includes/header.php';
         </div>
       </div>
       <div class="bento-card bento-md" data-reveal data-delay="1">
-        <img src="/naturafrik/images/Mais%20dans%20une%20plantation.jpg" alt="Céréales" class="bento-card-img">
+        <img src="/naturafrik/images/Mais%20dans%20une%20plantation.jpg" alt="Céréales" class="bento-card-img" loading="lazy">
         <div class="bento-card-overlay">
           <div class="bento-icon-fa"><i class="fas fa-seedling"></i></div>
           <div class="bento-label">Céréales & Tubercules</div>
@@ -427,7 +427,7 @@ require_once __DIR__ . '/includes/header.php';
         </div>
       </div>
       <div class="bento-card bento-tall" data-reveal data-delay="1">
-        <img src="/naturafrik/images/Agriculture%202.jpg" alt="Agriculture" class="bento-card-img">
+        <img src="/naturafrik/images/Agriculture%202.jpg" alt="Agriculture" class="bento-card-img" loading="lazy">
         <div class="bento-card-overlay">
           <div class="bento-icon-fa"><i class="fas fa-leaf"></i></div>
           <div class="bento-label">Agriculture durable</div>
@@ -462,7 +462,7 @@ require_once __DIR__ . '/includes/header.php';
     </div>
     <div class="immo-preview-grid">
       <div class="immo-preview-card immo-preview-featured" data-reveal>
-        <img src="/naturafrik/images/maison%20luxueuse%20plan%20de%20fond%20de%20la%20page.jpg" alt="Villa de luxe" class="immo-preview-img">
+        <img src="/naturafrik/images/maison%20luxueuse%20plan%20de%20fond%20de%20la%20page.jpg" alt="Villa de luxe" class="immo-preview-img" loading="lazy">
         <div class="immo-preview-overlay">
           <span class="immo-badge">Prestige</span>
           <h3 class="immo-preview-title">Maison de luxe<br>Yaoundé</h3>
@@ -473,7 +473,7 @@ require_once __DIR__ . '/includes/header.php';
         </div>
       </div>
       <div class="immo-preview-card" data-reveal data-delay="1">
-        <img src="/naturafrik/images/duplex%20luxueuse.webp" alt="Duplex" class="immo-preview-img">
+        <img src="/naturafrik/images/duplex%20luxueuse.webp" alt="Duplex" class="immo-preview-img" loading="lazy">
         <div class="immo-preview-overlay">
           <span class="immo-badge">Vente</span>
           <h3 class="immo-preview-title">Villa Duplex</h3>
@@ -482,7 +482,7 @@ require_once __DIR__ . '/includes/header.php';
         </div>
       </div>
       <div class="immo-preview-card" data-reveal data-delay="2">
-        <img src="/naturafrik/images/Appartement%203p.png" alt="Appartement" class="immo-preview-img">
+        <img src="/naturafrik/images/Appartement%203p.png" alt="Appartement" class="immo-preview-img" loading="lazy">
         <div class="immo-preview-overlay">
           <span class="immo-badge">Location</span>
           <h3 class="immo-preview-title">Appartement 3P</h3>
@@ -542,7 +542,7 @@ require_once __DIR__ . '/includes/header.php';
     </div>
     <div class="materials-detail-grid" data-reveal>
       <div class="material-detail-card">
-        <img src="/naturafrik/images/Or.jpg" alt="Or fin" class="material-detail-img">
+        <img src="/naturafrik/images/Or.jpg" alt="Or fin" class="material-detail-img" loading="lazy">
         <div>
           <div class="t-label" style="margin-bottom:0.4rem;">Métal précieux</div>
           <div class="material-detail-name">Or fin</div>
@@ -555,7 +555,7 @@ require_once __DIR__ . '/includes/header.php';
         </div>
       </div>
       <div class="material-detail-card">
-        <img src="/naturafrik/images/Cuivre.jpg" alt="Cuivre" class="material-detail-img">
+        <img src="/naturafrik/images/Cuivre.jpg" alt="Cuivre" class="material-detail-img" loading="lazy">
         <div>
           <div class="t-label" style="margin-bottom:0.4rem;">Métal industriel</div>
           <div class="material-detail-name">Cuivre</div>

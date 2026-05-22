@@ -56,10 +56,10 @@ if (defined('BASE') && BASE !== '/naturafrik') {
       <a href="https://wa.me/237680209435" target="_blank" class="btn-nav">
         <i class="fab fa-whatsapp"></i> WhatsApp
       </a>
-      <button id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
     </div>
+    <button id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 

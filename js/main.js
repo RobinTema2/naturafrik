@@ -5,10 +5,10 @@
 
 /* ── Page Loader ── */
 window.addEventListener('load', () => {
-  setTimeout(() => {
-    const loader = document.getElementById('page-loader');
-    if (loader) loader.classList.add('hidden');
-  }, 2200);
+  const loader = document.getElementById('page-loader');
+  if (loader) {
+    setTimeout(() => loader.classList.add('hidden'), 380);
+  }
 });
 
 /* ── Navbar scroll ── */
@@ -455,4 +455,4 @@ function revealChars(el) {
     }, 100 + i * 35);
   });
 }
-setTimeout(() => revealChars(document.querySelector('.hero-heading strong')), 2300);
+setTimeout(() => revealChars(document.querySelector('.hero-heading strong')), 500);
