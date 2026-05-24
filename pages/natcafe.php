@@ -326,6 +326,78 @@ $extra_head = '<style>
 }
 .nc-brew-desc { font-size: 0.8rem; color: #6A5840; line-height: 1.6; }
 
+/* Tasse en tasse */
+.nc-tasse {
+  position: relative; overflow: hidden;
+  height: 600px; display: flex; align-items: center; justify-content: center;
+}
+.nc-tasse-bg {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  filter: brightness(0.45) saturate(0.85);
+  transform: scale(1.05);
+  transition: transform 12s ease;
+}
+.nc-tasse:hover .nc-tasse-bg { transform: scale(1.0); }
+.nc-tasse-overlay {
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.2) 0%, rgba(8,6,4,0.75) 100%);
+}
+.nc-tasse-content {
+  position: relative; z-index: 2; text-align: center; max-width: 700px; padding: 0 2rem;
+}
+.nc-tasse-quote {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 300; font-style: italic;
+  color: #FEFCF8; line-height: 1.25; margin-bottom: 1.5rem;
+}
+.nc-tasse-quote em { color: var(--gold-pale); font-style: normal; }
+.nc-tasse-sep {
+  width: 60px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-light), transparent);
+  margin: 0 auto 1.5rem;
+}
+.nc-tasse-sub {
+  font-size: 0.72rem; letter-spacing: 0.35em;
+  color: rgba(200,146,10,0.7); text-transform: uppercase;
+}
+
+/* Duo tasses */
+.nc-duo-tasses {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+  height: 500px;
+}
+.nc-duo-img {
+  position: relative; overflow: hidden;
+}
+.nc-duo-img img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: brightness(0.6) saturate(0.8);
+  transition: filter 0.6s, transform 0.6s;
+}
+.nc-duo-img:hover img { filter: brightness(0.85) saturate(1); transform: scale(1.03); }
+.nc-duo-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(8,6,4,0.8) 0%, rgba(8,6,4,0.1) 50%);
+}
+.nc-duo-label {
+  position: absolute; bottom: 2rem; left: 2rem; right: 2rem;
+}
+.nc-duo-label-tag {
+  font-size: 0.58rem; letter-spacing: 0.3em;
+  color: var(--gold-light); font-weight: 700; text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+.nc-duo-label-text {
+  font-family: var(--serif); font-size: 1.4rem;
+  color: #F4EDE0; font-style: italic; line-height: 1.3;
+}
+@media (max-width: 768px) {
+  .nc-tasse { height: 420px; }
+  .nc-duo-tasses { grid-template-columns: 1fr; height: auto; }
+  .nc-duo-img { height: 300px; }
+}
+
 /* Origin */
 .nc-origin { padding: 8rem 0; background: var(--ink); }
 .nc-origin-grid {
@@ -489,7 +561,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
 
 <!-- ── Hero ─────────────────────────────────────────────────────── -->
 <section class="nc-hero">
-  <img src="/naturafrik/images/natcafe%20(2).png" alt="NATCAFÉ Café d'altitude" class="nc-hero-bg">
+  <img src="/naturafrik/images/cafe-en-tasse.jpg" onerror="this.src='/naturafrik/images/Cafe%20seche.jpg'" alt="NATCAFÉ Café d'altitude" class="nc-hero-bg">
   <div class="nc-hero-overlay"></div>
 
   <div class="nc-hero-content">
@@ -604,7 +676,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
   <div class="container">
     <div class="nc-aromes-grid">
       <div class="nc-aromes-img" data-reveal="left">
-        <img src="/naturafrik/images/natcafe%20(2).png" alt="Café NATCAFÉ tasse">
+        <img src="/naturafrik/images/cafe-tasse-coeur.jpg" onerror="this.src='/naturafrik/images/Cafe%20seche.jpg'" alt="Café NATCAFÉ en tasse">
         <div class="nc-aromes-img-overlay"></div>
         <p class="nc-arome-label">« Une tasse qui raconte<br>l'Afrique dans chaque gorgée »</p>
       </div>
@@ -665,6 +737,45 @@ require_once dirname(__DIR__) . '/includes/header.php';
     </div>
   </div>
 </section>
+
+<!-- ── Café en Tasse — Citation visuelle ─────────────────────────── -->
+<section class="nc-tasse">
+  <img src="/naturafrik/images/cafe-en-tasse.jpg"
+       onerror="this.src='/naturafrik/images/Cafe%20seche.jpg'"
+       alt="NATCAFÉ en tasse" class="nc-tasse-bg">
+  <div class="nc-tasse-overlay"></div>
+  <div class="nc-tasse-content" data-reveal>
+    <div class="nc-tasse-quote">
+      L'âme du café<br>camerounais<br><em>dans chaque tasse</em>
+    </div>
+    <div class="nc-tasse-sep"></div>
+    <div class="nc-tasse-sub">NATCAFÉ · Arabica · Hauts-Plateaux · 1 200 m</div>
+  </div>
+</section>
+
+<!-- ── Duo tasses ─────────────────────────────────────────────────── -->
+<div class="nc-duo-tasses">
+  <div class="nc-duo-img">
+    <img src="/naturafrik/images/cafe-en-tasse.jpg"
+         onerror="this.src='/naturafrik/images/Cafe%20seche.jpg'"
+         alt="Café NATCAFÉ — vapeur">
+    <div class="nc-duo-overlay"></div>
+    <div class="nc-duo-label">
+      <div class="nc-duo-label-tag">Notes de dégustation</div>
+      <div class="nc-duo-label-text">Fruits rouges · Caramel · Corps velouté</div>
+    </div>
+  </div>
+  <div class="nc-duo-img">
+    <img src="/naturafrik/images/cafe-tasse-coeur.jpg"
+         onerror="this.src='/naturafrik/images/Cafe%20seche.jpg'"
+         alt="Café NATCAFÉ — cœur de vapeur">
+    <div class="nc-duo-overlay"></div>
+    <div class="nc-duo-label">
+      <div class="nc-duo-label-tag">Torréfaction artisanale</div>
+      <div class="nc-duo-label-text">Légère à Moyenne · Single Origin · 100% Arabica</div>
+    </div>
+  </div>
+</div>
 
 <!-- ── L'Origine ─────────────────────────────────────────────────── -->
 <section class="nc-origin">

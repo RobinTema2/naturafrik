@@ -37,7 +37,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
     <!-- NATCACAO Spotlight -->
     <div class="natcacao-spotlight" data-reveal>
       <div>
-        <img src="/naturafrik/images/Produit%20phare.png" alt="NATCACAO 500g" class="natcacao-img">
+        <img src="/naturafrik/images/Natcacao%20(2).png" alt="NATCACAO 500g" class="natcacao-img">
       </div>
       <div>
         <div class="t-label" style="margin-bottom:0.75rem;">Produit phare</div>
