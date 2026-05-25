@@ -41,7 +41,7 @@ define('BASE', rtrim(getenv('SITE_BASE') !== false ? getenv('SITE_BASE') : '/nat
 // ============================================================
 // MAINTENANCE — mettre true pour suspendre le site
 // ============================================================
-define('MAINTENANCE_MODE', false);
+define('MAINTENANCE_MODE', true);
 
 // ============================================================
 // SITE
