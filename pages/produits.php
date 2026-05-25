@@ -71,7 +71,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
         </div>
         <div style="display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap;">
           <div style="font-family:var(--serif);font-size:2.5rem;color:var(--gold-light);">3 500 <span style="font-size:1rem;color:var(--text-dim);">FCFA</span></div>
-          <a href="https://wa.me/237680209435?text=Bonjour%2C%20je%20souhaite%20commander%20NATCACAO%20500g" target="_blank" class="btn-primary">
+          <a href="https://wa.me/237691268428?text=Bonjour%2C%20je%20souhaite%20commander%20NATCACAO%20500g" target="_blank" class="btn-primary">
             <i class="fab fa-whatsapp"></i> <span>Commander</span>
           </a>
         </div>
@@ -99,7 +99,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
           <p class="product-desc"><?= e(mb_strimwidth($p['short_description'] ?? $p['description'] ?? '', 0, 100, '…')) ?></p>
           <div class="product-meta">
             <div class="product-price"><?= format_price($p['price'], $p['currency']) ?></div>
-            <a href="https://wa.me/237680209435?text=<?= urlencode('Commande: ' . $p['name']) ?>" target="_blank" class="btn-product">
+            <a href="https://wa.me/237691268428?text=<?= urlencode('Commande: ' . $p['name']) ?>" target="_blank" class="btn-product">
               Commander <i class="fas fa-arrow-right"></i>
             </a>
           </div>
@@ -128,7 +128,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
           <p class="product-desc"><?= $p['desc'] ?></p>
           <div class="product-meta">
             <div class="product-price"><?= $p['price'] ?></div>
-            <a href="https://wa.me/237680209435?text=<?= urlencode('Commande: ' . $p['name']) ?>" target="_blank" class="btn-product">
+            <a href="https://wa.me/237691268428?text=<?= urlencode('Commande: ' . $p['name']) ?>" target="_blank" class="btn-product">
               Commander <i class="fas fa-arrow-right"></i>
             </a>
           </div>
@@ -140,7 +140,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
     <!-- CTA WhatsApp -->
     <div style="text-align:center;padding:3rem 0 1rem;" data-reveal>
       <p class="t-body" style="margin-bottom:1.5rem;">Vous ne trouvez pas ce que vous cherchez ? Contactez-nous directement.</p>
-      <a href="https://wa.me/237680209435?text=Bonjour%20NATURAFRIK%2C%20j%27ai%20une%20demande%20sp%C3%A9cifique." target="_blank" class="btn-primary">
+      <a href="https://wa.me/237691268428?text=Bonjour%20NATURAFRIK%2C%20j%27ai%20une%20demande%20sp%C3%A9cifique." target="_blank" class="btn-primary">
         <i class="fab fa-whatsapp"></i> <span>Demande personnalisée</span>
       </a>
     </div>

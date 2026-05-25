@@ -110,7 +110,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
           <p class="product-desc"><?= $p['desc'] ?></p>
           <div class="product-meta">
             <div class="product-price" style="font-size:1.1rem;"><?= $p['price'] ?></div>
-            <a href="https://wa.me/237680209435?text=<?= urlencode('Commande Agriculture: ' . $p['name']) ?>" target="_blank" class="btn-product">
+            <a href="https://wa.me/237691268428?text=<?= urlencode('Commande Agriculture: ' . $p['name']) ?>" target="_blank" class="btn-product">
               Commander <i class="fas fa-arrow-right"></i>
             </a>
           </div>
@@ -127,7 +127,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
         <h3 style="font-family:var(--serif);font-size:1.8rem;color:white;margin-bottom:0.4rem;">Prix de gros disponibles</h3>
         <p style="font-size:0.88rem;color:rgba(255,255,255,0.6);">Pour les commandes de plus de 100 kg ou 10 pièces, contactez-nous pour des tarifs préférentiels.</p>
       </div>
-      <a href="https://wa.me/237680209435?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20une%20commande%20en%20gros." target="_blank" class="btn-primary" style="white-space:nowrap;flex-shrink:0;">
+      <a href="https://wa.me/237691268428?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20une%20commande%20en%20gros." target="_blank" class="btn-primary" style="white-space:nowrap;flex-shrink:0;">
         <i class="fab fa-whatsapp"></i> <span>Devis gros</span>
       </a>
     </div>

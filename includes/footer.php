@@ -8,7 +8,7 @@
         <div class="footer-logo-text">NATURA<span>FRIK</span></div>
         <p>Groupe Nature Cameroun Sarl — Produits naturels d'exception : cacao, café, avocats, immobilier, agriculture et matières premières.</p>
         <div class="footer-socials">
-          <a href="https://wa.me/237680209435" target="_blank" class="footer-social" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://wa.me/237691268428" target="_blank" class="footer-social" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           <a href="#" class="footer-social" title="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="#" class="footer-social" title="Instagram"><i class="fab fa-instagram"></i></a>
           <a href="#" class="footer-social" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
@@ -59,7 +59,7 @@
         <div class="footer-contact-item">
           <i class="fab fa-whatsapp"></i>
           <span>
-            <a href="https://wa.me/237680209435" target="_blank">+237 680 209 435</a><br>
+            <a href="https://wa.me/237691268428" target="_blank">+237 691 268 428</a><br>
             <a href="https://wa.me/237688620132" target="_blank">+237 688 620 132</a>
           </span>
         </div>
@@ -108,7 +108,7 @@
 </footer>
 
 <!-- WhatsApp FAB -->
-<a id="whatsapp-fab" href="https://wa.me/237680209435?text=Bonjour%20NATURAFRIK%2C%20je%20souhaite%20des%20informations." target="_blank" aria-label="WhatsApp">
+<a id="whatsapp-fab" href="https://wa.me/237691268428?text=Bonjour%20NATURAFRIK%2C%20je%20souhaite%20des%20informations." target="_blank" aria-label="WhatsApp">
   <i class="fab fa-whatsapp"></i>
 </a>
 

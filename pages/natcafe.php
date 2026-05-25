@@ -582,7 +582,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
           2 800
           <small>FCFA / 250g</small>
         </div>
-        <a href="https://wa.me/237680209435?text=Bonjour%2C%20je%20souhaite%20commander%20NATCAF%C3%89%20250g" target="_blank" class="nc-hero-cta">
+        <a href="https://wa.me/237691268428?text=Bonjour%2C%20je%20souhaite%20commander%20NATCAF%C3%89%20250g" target="_blank" class="nc-hero-cta">
           <i class="fab fa-whatsapp"></i> Commander
         </a>
       </div>
@@ -850,7 +850,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
           2 800 <small>FCFA / 250g</small>
         </div>
         <div class="nc-order-btns">
-          <a href="https://wa.me/237680209435?text=Bonjour%20NATURAFRIK%2C%20je%20souhaite%20commander%20NATCAF%C3%89%20250g.%20Pouvez-vous%20m%27indiquer%20les%20disponibilit%C3%A9s%20%3F" target="_blank" class="nc-btn-wa">
+          <a href="https://wa.me/237691268428?text=Bonjour%20NATURAFRIK%2C%20je%20souhaite%20commander%20NATCAF%C3%89%20250g.%20Pouvez-vous%20m%27indiquer%20les%20disponibilit%C3%A9s%20%3F" target="_blank" class="nc-btn-wa">
             <i class="fab fa-whatsapp"></i> Commander via WhatsApp
           </a>
           <a href="/naturafrik/pages/contact.php" class="nc-btn-outline">

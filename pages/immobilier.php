@@ -103,7 +103,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
             <div style="font-size:0.65rem;letter-spacing:0.25em;color:var(--text-dim);margin-bottom:0.2rem;">PRIX DE VENTE</div>
             <div style="font-family:var(--serif);font-size:2.4rem;color:var(--gold-light);">120 000 000 <span style="font-size:1rem;color:var(--text-dim);">FCFA</span></div>
           </div>
-          <a href="https://wa.me/237680209435?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20la%20Villa%20Luxueuse%20NATURAFRIK." target="_blank" class="btn-primary">
+          <a href="https://wa.me/237691268428?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20la%20Villa%20Luxueuse%20NATURAFRIK." target="_blank" class="btn-primary">
             <i class="fab fa-whatsapp"></i> <span>Renseignements</span>
           </a>
         </div>
@@ -147,7 +147,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
           <p class="product-desc"><?= e(mb_strimwidth($p['description'] ?? '', 0, 90, '…')) ?></p>
           <div class="product-meta">
             <div class="product-price"><?= number_format($p['price']) ?> <small><?= e($p['currency'] ?? 'FCFA') ?></small></div>
-            <a href="https://wa.me/237680209435?text=<?= urlencode('Immobilier: ' . $p['title']) ?>" target="_blank" class="btn-product">Infos <i class="fas fa-arrow-right"></i></a>
+            <a href="https://wa.me/237691268428?text=<?= urlencode('Immobilier: ' . $p['title']) ?>" target="_blank" class="btn-product">Infos <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -179,7 +179,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
           <p class="product-desc"><?= $p['desc'] ?></p>
           <div class="product-meta">
             <div class="product-price" style="font-size:1.05rem;"><?= $p['price'] ?> <small>FCFA</small></div>
-            <a href="https://wa.me/237680209435?text=<?= urlencode('Immobilier: ' . $p['name']) ?>" target="_blank" class="btn-product">
+            <a href="https://wa.me/237691268428?text=<?= urlencode('Immobilier: ' . $p['name']) ?>" target="_blank" class="btn-product">
               Infos <i class="fas fa-arrow-right"></i>
             </a>
           </div>
@@ -195,7 +195,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
       </div>
       <h3 style="font-family:var(--serif);font-size:1.7rem;color:var(--cream);margin-bottom:0.6rem;">Vous avez un bien à vendre ou à louer ?</h3>
       <p class="t-body" style="margin-bottom:1.75rem;max-width:460px;margin-left:auto;margin-right:auto;">Confiez votre bien à NATURAFRIK. Estimation gratuite, mandat exclusif ou simple, diffusion large.</p>
-      <a href="https://wa.me/237680209435?text=Bonjour%2C%20j%27ai%20un%20bien%20immobilier%20%C3%A0%20mettre%20en%20vente%2Flocation." target="_blank" class="btn-primary">
+      <a href="https://wa.me/237691268428?text=Bonjour%2C%20j%27ai%20un%20bien%20immobilier%20%C3%A0%20mettre%20en%20vente%2Flocation." target="_blank" class="btn-primary">
         <i class="fab fa-whatsapp"></i> <span>Confier mon bien</span>
       </a>
     </div>

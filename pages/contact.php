@@ -107,7 +107,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
           <div>
             <div class="contact-info-title">WHATSAPP</div>
             <div class="contact-info-val">
-              <a href="https://wa.me/237680209435" target="_blank" style="color:#25D366;display:block;">+237 680 209 435</a>
+              <a href="https://wa.me/237691268428" target="_blank" style="color:#25D366;display:block;">+237 691 268 428</a>
               <a href="https://wa.me/237688620132" target="_blank" style="color:#25D366;display:block;">+237 688 620 132</a>
             </div>
           </div>
@@ -135,7 +135,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
         </div>
 
         <!-- Quick WhatsApp button -->
-        <a href="https://wa.me/237680209435?text=Bonjour%20NATURAFRIK%2C%20j%27ai%20une%20demande%20sp%C3%A9ciale." target="_blank"
+        <a href="https://wa.me/237691268428?text=Bonjour%20NATURAFRIK%2C%20j%27ai%20une%20demande%20sp%C3%A9ciale." target="_blank"
            style="display:flex;align-items:center;justify-content:center;gap:0.75rem;width:100%;padding:1rem;background:#25D366;color:white;font-weight:700;font-size:0.9rem;letter-spacing:0.1em;border-radius:var(--r-full);margin-top:1rem;transition:transform 0.2s,box-shadow 0.2s;"
            onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 10px 30px rgba(37,211,102,0.4)'"
            onmouseout="this.style.transform='';this.style.boxShadow=''">

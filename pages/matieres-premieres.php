@@ -117,7 +117,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
             <div class="spec-row"><span class="spec-key">Délai livraison</span><span class="spec-val">3–7 jours</span></div>
             <div class="spec-row"><span class="spec-key">Certification</span><span class="spec-val">LBMA / ITIE</span></div>
           </div>
-          <a href="https://wa.me/237680209435?text=Demande%20de%20renseignement%20sur%20l%27or%20fin%20NATURAFRIK" target="_blank" class="btn-primary" style="margin-top:1.5rem;font-size:0.78rem;padding:0.65rem 1.4rem;">
+          <a href="https://wa.me/237691268428?text=Demande%20de%20renseignement%20sur%20l%27or%20fin%20NATURAFRIK" target="_blank" class="btn-primary" style="margin-top:1.5rem;font-size:0.78rem;padding:0.65rem 1.4rem;">
             <i class="fab fa-whatsapp"></i> <span>Renseignements</span>
           </a>
         </div>
@@ -143,7 +143,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
             <div class="spec-row"><span class="spec-key">Commande min.</span><span class="spec-val">500 kg</span></div>
             <div class="spec-row"><span class="spec-key">Délai livraison</span><span class="spec-val">7–14 jours</span></div>
           </div>
-          <a href="https://wa.me/237680209435?text=Demande%20cuivre%20NATURAFRIK" target="_blank" class="btn-product" style="margin-top:1.5rem;">
+          <a href="https://wa.me/237691268428?text=Demande%20cuivre%20NATURAFRIK" target="_blank" class="btn-product" style="margin-top:1.5rem;">
             Demande de devis <i class="fas fa-arrow-right"></i>
           </a>
         </div>
@@ -169,7 +169,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
             <div class="spec-row"><span class="spec-key">Commande min.</span><span class="spec-val">200 kg</span></div>
             <div class="spec-row"><span class="spec-key">Application</span><span class="spec-val">Mécanique · Art · Bâtiment</span></div>
           </div>
-          <a href="https://wa.me/237680209435?text=Demande%20bronze%20NATURAFRIK" target="_blank" class="btn-product" style="margin-top:1.5rem;">
+          <a href="https://wa.me/237691268428?text=Demande%20bronze%20NATURAFRIK" target="_blank" class="btn-product" style="margin-top:1.5rem;">
             Demande de devis <i class="fas fa-arrow-right"></i>
           </a>
         </div>
@@ -195,7 +195,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
             <div class="spec-row"><span class="spec-key">Commande min.</span><span class="spec-val">1 tonne</span></div>
             <div class="spec-row"><span class="spec-key">Transport</span><span class="spec-val">Route / Conteneur</span></div>
           </div>
-          <a href="https://wa.me/237680209435?text=Demande%20minerai%20de%20fer%20NATURAFRIK" target="_blank" class="btn-product" style="margin-top:1.5rem;">
+          <a href="https://wa.me/237691268428?text=Demande%20minerai%20de%20fer%20NATURAFRIK" target="_blank" class="btn-product" style="margin-top:1.5rem;">
             Demande de devis <i class="fas fa-arrow-right"></i>
           </a>
         </div>
@@ -221,7 +221,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
             <div class="spec-row"><span class="spec-key">Commande min.</span><span class="spec-val">1 tonne</span></div>
             <div class="spec-row"><span class="spec-key">Certification</span><span class="spec-val">ISO 2000/2002</span></div>
           </div>
-          <a href="https://wa.me/237680209435?text=Demande%20caoutchouc%20naturel%20NATURAFRIK" target="_blank" class="btn-product" style="margin-top:1.5rem;">
+          <a href="https://wa.me/237691268428?text=Demande%20caoutchouc%20naturel%20NATURAFRIK" target="_blank" class="btn-product" style="margin-top:1.5rem;">
             Demande de devis <i class="fas fa-arrow-right"></i>
           </a>
         </div>
@@ -265,7 +265,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
               <td style="padding:1rem 1.25rem;color:var(--text);"><?= $row[3] ?></td>
               <td style="padding:1rem 1.25rem;color:var(--text);"><?= $row[4] ?></td>
               <td style="padding:1rem 1.25rem;text-align:center;">
-                <a href="https://wa.me/237680209435?text=<?= urlencode('Demande: ' . $row[0]) ?>" target="_blank" class="btn-product" style="font-size:0.72rem;padding:0.4rem 0.9rem;">
+                <a href="https://wa.me/237691268428?text=<?= urlencode('Demande: ' . $row[0]) ?>" target="_blank" class="btn-product" style="font-size:0.72rem;padding:0.4rem 0.9rem;">
                   <i class="fab fa-whatsapp"></i> Contacter
                 </a>
               </td>

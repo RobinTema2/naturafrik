@@ -47,7 +47,7 @@ define('SITE_URL',      getenv('SITE_URL') ?: 'http://localhost/naturafrik');
 define('SITE_EMAIL',    'contact@naturafrik.com');
 define('SITE_PHONE',    '+237 698 141 070');
 define('SITE_PHONE2',   '+237 688 620 132');
-define('SITE_WHATSAPP', '+237 680 209 435');
+define('SITE_WHATSAPP', '+237 691 268 428');
 define('SITE_ADDRESS',  'BP 3005, Yaoundé-Cameroun (Montée Anne Rouge)');
 
 // ============================================================

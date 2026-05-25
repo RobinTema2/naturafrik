@@ -629,7 +629,7 @@ require_once __DIR__ . '/includes/header.php';
     <h2 class="t-title" data-reveal>Prêt à commander ?</h2>
     <p class="t-body" data-reveal data-delay="1">Contactez-nous directement via WhatsApp ou notre formulaire. Livraison disponible à Yaoundé et partout au Cameroun.</p>
     <div class="cta-actions" data-reveal data-delay="2">
-      <a href="https://wa.me/237680209435?text=Bonjour%20NATURAFRIK%2C%20je%20souhaite%20passer%20commande." target="_blank" class="btn-primary">
+      <a href="https://wa.me/237691268428?text=Bonjour%20NATURAFRIK%2C%20je%20souhaite%20passer%20commande." target="_blank" class="btn-primary">
         <i class="fab fa-whatsapp"></i> <span>Commander via WhatsApp</span>
       </a>
       <a href="/naturafrik/pages/contact.php" class="btn-outline">Formulaire de contact</a>

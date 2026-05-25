@@ -53,7 +53,7 @@ if (defined('BASE') && BASE !== '/naturafrik') {
     </div>
 
     <div class="nav-cta">
-      <a href="https://wa.me/237680209435" target="_blank" class="btn-nav">
+      <a href="https://wa.me/237691268428" target="_blank" class="btn-nav">
         <i class="fab fa-whatsapp"></i> WhatsApp
       </a>
     </div>
@@ -72,8 +72,8 @@ if (defined('BASE') && BASE !== '/naturafrik') {
   <a href="/naturafrik/pages/agriculture.php">Agriculture</a>
   <a href="/naturafrik/pages/matieres-premieres.php">Matières Premières</a>
   <a href="/naturafrik/pages/contact.php">Contact</a>
-  <a href="https://wa.me/237680209435" target="_blank" style="color:var(--gold)">
-    <i class="fab fa-whatsapp"></i> +237 680 209 435
+  <a href="https://wa.me/237691268428" target="_blank" style="color:var(--gold)">
+    <i class="fab fa-whatsapp"></i> +237 691 268 428
   </a>
 </div>
 
