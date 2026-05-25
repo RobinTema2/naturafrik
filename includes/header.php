@@ -1,4 +1,14 @@
 <?php
+// Maintenance mode — redirige tous les visiteurs sauf l'admin
+if (defined('MAINTENANCE_MODE') && MAINTENANCE_MODE === true) {
+    $is_admin = strpos($_SERVER['SCRIPT_FILENAME'] ?? '', DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR) !== false;
+    $is_maintenance_page = basename($_SERVER['SCRIPT_FILENAME'] ?? '') === 'maintenance.php';
+    if (!$is_admin && !$is_maintenance_page) {
+        header('Location: ' . (defined('BASE') ? BASE : '/naturafrik') . '/maintenance.php');
+        exit;
+    }
+}
+
 // Auto-rewrite /naturafrik/ paths when deployed at root (Railway, InfinityFree root, etc.)
 if (defined('BASE') && BASE !== '/naturafrik') {
     ob_start(function ($buf) {

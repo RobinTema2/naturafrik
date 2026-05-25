@@ -39,6 +39,11 @@ define('DB_CHARSET', 'utf8mb4');
 define('BASE', rtrim(getenv('SITE_BASE') !== false ? getenv('SITE_BASE') : '/naturafrik', '/'));
 
 // ============================================================
+// MAINTENANCE — mettre true pour suspendre le site
+// ============================================================
+define('MAINTENANCE_MODE', false);
+
+// ============================================================
 // SITE
 // ============================================================
 define('SITE_NAME',     'NATURAFRIK');
