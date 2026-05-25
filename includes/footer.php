@@ -63,10 +63,6 @@
             <a href="https://wa.me/237688620132" target="_blank">+237 688 620 132</a>
           </span>
         </div>
-        <div class="footer-contact-item">
-          <i class="fas fa-globe"></i>
-          <span><a href="tel:+16132826599">+1 (613) 282-6599</a></span>
-        </div>
         <div class="footer-banks">
           <strong>Comptes Bancaires</strong>
           B.G.F.I. Bank: CM21 10035012004001776701179<br>

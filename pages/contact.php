@@ -113,13 +113,6 @@ require_once dirname(__DIR__) . '/includes/header.php';
           </div>
         </div>
 
-        <div class="contact-info-card">
-          <div class="contact-info-icon"><i class="fas fa-globe"></i></div>
-          <div>
-            <div class="contact-info-title">INTERNATIONAL</div>
-            <div class="contact-info-val"><a href="tel:+16132826599" style="color:var(--cream);">+1 (613) 282-6599</a></div>
-          </div>
-        </div>
 
         <div class="contact-info-card">
           <div class="contact-info-icon"><i class="fas fa-university"></i></div>
