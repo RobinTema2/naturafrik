@@ -1,10 +1,9 @@
 <?php
-// Maintenance mode — redirige tous les visiteurs sauf l'admin
+// Maintenance mode — affiche la page directement sans redirection
 if (defined('MAINTENANCE_MODE') && MAINTENANCE_MODE === true) {
-    $is_admin = strpos($_SERVER['SCRIPT_FILENAME'] ?? '', DIRECTORY_SEPARATOR . 'admin' . DIRECTORY_SEPARATOR) !== false;
-    $is_maintenance_page = basename($_SERVER['SCRIPT_FILENAME'] ?? '') === 'maintenance.php';
-    if (!$is_admin && !$is_maintenance_page) {
-        header('Location: ' . (defined('BASE') ? BASE : '/naturafrik') . '/maintenance.php');
+    $is_admin = strpos(str_replace('\\', '/', $_SERVER['SCRIPT_FILENAME'] ?? ''), '/admin/') !== false;
+    if (!$is_admin) {
+        require dirname(__DIR__) . '/maintenance.php';
         exit;
     }
 }
