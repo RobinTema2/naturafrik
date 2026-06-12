@@ -12,7 +12,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
 
 <!-- Page Hero -->
 <section class="page-hero" style="height:50vh;min-height:420px;">
-  <img src="/naturafrik/images/Or.jpg" alt="Matières premières Cameroun" class="page-hero-bg" style="filter:brightness(0.22)saturate(0.7);">
+  <img src="/naturafrik/images/photo%20lingo%20de%20fer%202.jpeg" alt="Matières premières Cameroun" class="page-hero-bg" style="filter:brightness(0.22)saturate(0.7);">
   <div class="page-hero-content">
     <div class="container">
       <div class="section-eyebrow" style="margin-bottom:1rem;" data-reveal>
@@ -126,7 +126,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
       <!-- Cuivre -->
       <div class="matiere-card">
         <div class="matiere-card-img-wrap">
-          <img src="/naturafrik/images/Cuivre.jpg" alt="Cuivre" class="matiere-card-img">
+          <img src="/naturafrik/images/photo%20cuivre%20.jpeg" alt="Cuivre" class="matiere-card-img">
           <div class="matiere-card-overlay">
             <img src="/naturafrik/images/copper.svg" alt="" class="matiere-svg-icon">
           </div>
@@ -178,7 +178,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
       <!-- Fer -->
       <div class="matiere-card">
         <div class="matiere-card-img-wrap">
-          <img src="/naturafrik/images/Fer.jpg" alt="Minerai de fer" class="matiere-card-img">
+          <img src="/naturafrik/images/photo%20lingo%20de%20fer%20.jpeg" alt="Lingots de fer" class="matiere-card-img">
           <div class="matiere-card-overlay">
             <i class="fas fa-industry matiere-fa-icon"></i>
           </div>
