@@ -68,9 +68,9 @@ require_once dirname(__DIR__) . '/includes/header.php';
         <div class="material-icon-wrap" style="background:linear-gradient(135deg,#1A1A1A,#0A0A0A);">
           <i class="fas fa-industry" style="color:rgba(255,255,255,0.65);font-size:1.4rem;"></i>
         </div>
-        <div class="material-tick-name">Fer</div>
-        <div class="material-tick-formula">Fe · Minerai brut</div>
-        <span class="badge-standard">BRUT</span>
+        <div class="material-tick-name">Aluminium</div>
+        <div class="material-tick-formula">Al · 99.7%</div>
+        <span class="badge-standard">INDUSTRIEL</span>
       </div>
       <div class="material-tick" style="grid-column:span 1;">
         <div class="material-icon-wrap" style="background:linear-gradient(135deg,#0A1A0A,#050D05);">
@@ -175,27 +175,27 @@ require_once dirname(__DIR__) . '/includes/header.php';
         </div>
       </div>
 
-      <!-- Fer -->
+      <!-- Aluminium -->
       <div class="matiere-card">
         <div class="matiere-card-img-wrap">
-          <img src="/naturafrik/images/photo%20lingo%20de%20fer%20.jpeg" alt="Lingots de fer" class="matiere-card-img">
+          <img src="/naturafrik/images/photo%20lingo%20de%20fer%20.jpeg" alt="Lingots d'aluminium" class="matiere-card-img">
           <div class="matiere-card-overlay">
             <i class="fas fa-industry matiere-fa-icon"></i>
           </div>
         </div>
         <div class="matiere-card-body">
-          <div class="t-label" style="margin-bottom:0.4rem;">Minerai</div>
-          <h3 class="material-detail-name">Fer</h3>
+          <div class="t-label" style="margin-bottom:0.4rem;">Métal industriel</div>
+          <h3 class="material-detail-name">Aluminium</h3>
           <p style="font-size:0.84rem;color:var(--text-muted);line-height:1.65;margin-bottom:1rem;">
-            Minerai de fer camerounais à haute teneur, destiné à la sidérurgie et la métallurgie. Extraction responsable et certifiée.
+            Aluminium de haute qualité en lingots, destiné à l'industrie, la construction et la fabrication. Certifié et disponible à l'export.
           </p>
           <div class="material-detail-specs">
-            <div class="spec-row"><span class="spec-key">Teneur Fe</span><span class="spec-val">65–68%</span></div>
-            <div class="spec-row"><span class="spec-key">Conditionnement</span><span class="spec-val">Vrac · Sacs bigbag</span></div>
+            <div class="spec-row"><span class="spec-key">Pureté Al</span><span class="spec-val">99.7%</span></div>
+            <div class="spec-row"><span class="spec-key">Conditionnement</span><span class="spec-val">Lingots · Plaques</span></div>
             <div class="spec-row"><span class="spec-key">Commande min.</span><span class="spec-val">1 tonne</span></div>
             <div class="spec-row"><span class="spec-key">Transport</span><span class="spec-val">Route / Conteneur</span></div>
           </div>
-          <a href="https://wa.me/237691268428?text=Demande%20minerai%20de%20fer%20NATURAFRIK" target="_blank" class="btn-product" style="margin-top:1.5rem;">
+          <a href="https://wa.me/237691268428?text=Demande%20aluminium%20NATURAFRIK" target="_blank" class="btn-product" style="margin-top:1.5rem;">
             Demande de devis <i class="fas fa-arrow-right"></i>
           </a>
         </div>
@@ -254,7 +254,7 @@ require_once dirname(__DIR__) . '/includes/header.php';
               ['Or','Au','999.9‰','100 g','3–7 jours'],
               ['Cuivre','Cu','99.9%','500 kg','7–14 jours'],
               ['Bronze','Cu–Sn','Grade A','200 kg','10–14 jours'],
-              ['Fer','Fe','65–68%','1 tonne','14–21 jours'],
+              ['Aluminium','Al','99.7%','1 tonne','14–21 jours'],
               ['Caoutchouc','C₅H₈','RSS1/TSR20','1 tonne','14–21 jours'],
             ];
             foreach ($tableData as $i => $row): ?>
